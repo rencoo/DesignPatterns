@@ -17,18 +17,16 @@
         max-width: 590px;
         height: 250px;
         margin-bottom: 100px; /*为了方便看效果，将图片尽可能的撑开*/
-        opacity: 0;
-        transition: opacity 0.5s ease-in;
     }
 </style>
 </head>
 <body>
-    <div><img class="lazyload" src="images/img1.jpg"></div>
-    <div><img class="lazyload" src="images/img2.jpg"></div>
-    <div><img class="lazyload" src="images/img3.jpg"></div>
-    <div><img class="lazyload" src="images/img4.jpg"></div>
-    <div><img class="lazyload" src="images/img5.jpg"></div>
-    <div><img class="lazyload" src="images/img6.jpg"></div>
+    <div><img class="lazyload" data-src="images/img1.jpg"></div>
+    <div><img class="lazyload" data-src="images/img2.jpg"></div>
+    <div><img class="lazyload" data-src="images/img3.jpg"></div>
+    <div><img class="lazyload" data-src="images/img4.jpg"></div>
+    <div><img class="lazyload" data-src="images/img5.jpg"></div>
+    <div><img class="lazyload" data-src="images/img6.jpg"></div>
 </body>
 <script src="lazyLoad.js"></script>
 </html>

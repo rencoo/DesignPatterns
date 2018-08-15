@@ -1,3 +1,7 @@
+// 懒加载原理
+// 将资源路径赋值到img标签的data-xx属性中，而非直接赋值在src属性
+// 持续判断图片是否在用户当前窗口的可视范围内，从而动态将data-xx的值(url)赋值到src里去
+
 // 图片懒加载类
 class LazyLoad {
     constructor(selector) {
@@ -25,7 +29,8 @@ class LazyLoad {
 
     // 显示图片
     show(el) {
-        el.style.opacity = 1;
+        let src =el.getAttribute('data-src');
+        el.src = src;
     }
 
     // 移除imglis里面已经加载的图片(避免重复判断,减少开销)
