@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>图片的行为模式</title>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .wrapper {
+        height: 100%;
+        width: 100%;
+    }
+    .wrapper #list {
+        text-align: center;
+    }
+    .wrapper .cap{
+        width: 500px;
+        margin: 0 auto;
+    }
+    .wrapper img{
+        width: 500px;
+    }
+    .wrapper #mask {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background:#00000091;
+        display: none;
+        text-align: center;
+    }
+    .wrapper #mask img {
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .wrapper .previous{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        height: 100px;
+        color: white;
+        font-size: 3em;
+    }
+    .wrapper .next {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        height: 100px;
+        color: white;
+        font-size: 3em;
+    }
+</style>
+</head>
+<body>
+    <div class='wrapper'>
+        <ul id="list">
+            <li>
+                <section class="cap">
+                    <h3>曝韦德愿做牺牲降薪留队 跳出合同4年5000万续约</h3>
+                    <p>2010年夏天，韦德同热火签下一份为期六年价值1.08亿美元的合同，目前还剩两年到期，价值4150万。这份合同的最后两年，韦德分别拥有一个跳出条款，可以提前恢复自由身。而韦德正打算利用这一条款结束当前合同，与球队重签一份为期4年，总价值在5000万到5500万之间的新合同。...</p>
+                </section>
+                <img src="images/img1.jpg" alt="" />
+            </li>
+            <li>
+                <section class="cap">
+                    <h3>曝韦德愿做牺牲降薪留队 跳出合同4年5000万续约</h3>
+                    <p>2010年夏天，韦德同热火签下一份为期六年价值1.08亿美元的合同，目前还剩两年到期，价值4150万。这份合同的最后两年，韦德分别拥有一个跳出条款，可以提前恢复自由身。而韦德正打算利用这一条款结束当前合同，与球队重签一份为期4年，总价值在5000万到5500万之间的新合同。...</p>
+                </section>
+                <img src="images/img2.jpg" alt="" />
+            </li>
+            <li>
+                <section class="cap">
+                    <h3>曝韦德愿做牺牲降薪留队 跳出合同4年5000万续约</h3>
+                    <p>2010年夏天，韦德同热火签下一份为期六年价值1.08亿美元的合同，目前还剩两年到期，价值4150万。这份合同的最后两年，韦德分别拥有一个跳出条款，可以提前恢复自由身。而韦德正打算利用这一条款结束当前合同，与球队重签一份为期4年，总价值在5000万到5500万之间的新合同。...</p>
+                </section>
+                <img src="images/img3.jpg" alt="" />
+            </li>
+            <li>
+                <section class="cap">
+                    <h3>曝韦德愿做牺牲降薪留队 跳出合同4年5000万续约</h3>
+                    <p>2010年夏天，韦德同热火签下一份为期六年价值1.08亿美元的合同，目前还剩两年到期，价值4150万。这份合同的最后两年，韦德分别拥有一个跳出条款，可以提前恢复自由身。而韦德正打算利用这一条款结束当前合同，与球队重签一份为期4年，总价值在5000万到5500万之间的新合同。...</p>
+                </section>
+                <img src="images/img4.jpg" alt="" />
+            </li>
+            <li>
+                <section class="cap">
+                    <h3>曝韦德愿做牺牲降薪留队 跳出合同4年5000万续约</h3>
+                    <p>2010年夏天，韦德同热火签下一份为期六年价值1.08亿美元的合同，目前还剩两年到期，价值4150万。这份合同的最后两年，韦德分别拥有一个跳出条款，可以提前恢复自由身。而韦德正打算利用这一条款结束当前合同，与球队重签一份为期4年，总价值在5000万到5500万之间的新合同。...</p>
+                </section>
+                <img src="images/img5.jpg" alt="" />
+            </li>
+            <li>
+                <section class="cap">
+                    <h3>曝韦德愿做牺牲降薪留队 跳出合同4年5000万续约</h3>
+                    <p>2010年夏天，韦德同热火签下一份为期六年价值1.08亿美元的合同，目前还剩两年到期，价值4150万。这份合同的最后两年，韦德分别拥有一个跳出条款，可以提前恢复自由身。而韦德正打算利用这一条款结束当前合同，与球队重签一份为期4年，总价值在5000万到5500万之间的新合同。...</p>
+                </section>
+                <img src="images/img6.jpg" alt="" />
+            </li>
+        </ul>
+        
+        <div id="mask">
+            <a class="previous" href="###">&lt;</a>
+            <img src=""id="preview-image">
+            <a class="next" href="###">&gt;</a>
+        </div>
+    </div>
+</body>
+<script src="behavior.js"></script>
+</html>
