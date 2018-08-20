@@ -72,7 +72,4 @@ imgList.addEventListener('preview', function(evt){
     }
 })
 
-// 抽象 setPreviewBehvior；独立地给它赋予被 preview 的行为
-// 在这个行为里面只是给它，提供一个 preview 方法，这样就把它跟页面上的触发行为给抽象分离出来了
-
 
