@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#stopwatch{
+    position: relative;
+    width: 300px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.header{
+    height: 10%;
+    border-bottom: 0.5px dashed grey;
+    background: url(images/texture1.jpg);
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;  
+}
+.main{
+    height: 100%;
+}
+.display{
+    height: 23%;
+    background: #fcfcff;
+    text-align: center;
+    line-height: 138px;
+    font-size: 65px; 
+    /* font-weight: lighter; */
+}
+
+.ctrl{
+    height: 27%;
+    border-top: 0.5px dashed grey;
+    background: url(images/texture2.jpg);
+    font-size: 15px; 
+    text-align: center;
+}
+
+.ctrl button{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin-top: 50px;
+    border-radius: 50%; 
+    border: dashed 0.4px gray;
+    outline: none;
+    cursor: pointer;
+    background: #fff; 
+}
+.ctrl  #btnOne{
+    left: 20px;
+}
+.ctrl  #btnTwo{
+    right: 20px;
+    background: #00800057;
+    color: green;
+}
+/* 按钮显示 计次和复位 时的样式 */
+.ctrl .active{
+    background: #808080bd!important;
+    color: #fff!important;
+}
+/* 按钮显示 停止 时 的样式 */
+.ctrl .stop{
+    background: #ff000073!important;
+    color: #e80e0e!important;
+}
+
+.lap{
+    height: 40%;
+    list-style: none;
+    border-top: 0.5px dashed grey;
+    background: url(images/texture2.jpg);
+    font-size: 15px; 
+    text-align: center;
+    overflow: scroll;
+}
+.lap li{
+    height: 30px;
+    border-bottom: 0.5px dashed grey;
+}
+.lap span {
+    display: inline-block;
+    margin:5px 0;
+}
+.lap span:nth-of-type(2n+1){
+    margin-right: 60px;
+}
+.lap span:nth-of-type(2n){
+    margin-left: 60px;
+}
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    background-color: #F5F5F5;
+}
